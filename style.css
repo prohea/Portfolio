@@ -1,72 +1,151 @@
 * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #010101;
+}
+
+.header {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #010101;
+  color: aliceblue;
+}
+
+
+.header div {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+nav ul {
+  flex: 1 1 auto;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 25px;
+  text-underline-position: below;
+}
+
+/* Change color on hover */
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.links {
+  padding: 15px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 25px;
+}
+
+.pro {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("https://www.vactualpapers.com/web/wallpapers/natural-beauty-nature-hd-wallpaper-no-0093/1920x1200.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1;
+  background-color: #b9c6ae;
+  padding: 80px;
+  text-align: center;
+}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+/* 
+What does the justify-content property do? 
+TODO: aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally)
+*/
+.products {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 
+What is the flex property a shorthand property for? grow, shrink, basis
+What is it doing here? 
+TODO: We are making the product card not growable, not shrinkable, and with an inital length of 400px
+*/
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* 
+What does the flex-direction property define? how it flexes if it needs to
+What is it doing here? 
+TODO: telling the main body and navbar to stack vertically
+*/
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
   }
-  
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("https://wallpapercave.com/wp/G4ZYv4A.jpg");
-  }
-  
-  .header {
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("https://wallpapercave.com/wp/G4ZYv4A.jpg");
-    color: aliceblue;
-  }
-  
-  .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-  }
-  
-  
-  /* Style the top navigation bar */
-  .topnav {
-    background-color: rgb(237, 237, 246);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  /* Style the topnav links */
-  .links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #f2f2f2;
-    padding: 14px 16px;
-  }
-  
-  #links > p {
-    margin: 6px;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .float-left {
-    float: left;
-    margin-right: 25px;
-  }
-  
-  /* Style the content */
-  .content {
-    background-color: rgb(31, 38, 67);
-    padding: 10px;
-    height: 200px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Style the footer */
-  .footer {
-    background-color: #b6b7a5;
-    padding: 10px;
-  }
-    
+}
