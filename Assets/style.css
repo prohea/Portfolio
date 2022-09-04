@@ -40,18 +40,30 @@ aside {
 	float: left;
 	background-color: aqua;
 	color: black;
+	border-style: none solid none none;
+	margin: 5px;
+	padding: 5px;
+
+
 }
 
 .column {
+	flex-direction: column;
 	color: black;
-	float: left;
-	width: 33.33%;
+	width: 50%;
 	padding: 15px;
 	background-color: aquamarine;
+	border: black;
+	border-style: solid;
+	margin: 5px;
 }
 
 .row:after {
-	content: "";
+	flex-direction: row;
 	display: table;
 	clear: both;
+}
+
+footer {
+	flex-direction: column;
 }
