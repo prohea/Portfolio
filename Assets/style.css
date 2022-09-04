@@ -41,3 +41,17 @@ aside {
 	background-color: aqua;
 	color: black;
 }
+
+.column {
+	color: black;
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+	background-color: aquamarine;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
