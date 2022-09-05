@@ -19,14 +19,14 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 # Contributions
-Starter Code
+W3Schools
 
 # Resources Used
-Starter Code
+W3Schools
 
 # Technologies Used
 HTML, CSS
 # Deployed Project
 
 # Screenshot
-![Portfolio]()
+![Portfolio](./Assets/Images/portfolioscreenshoot.png)
