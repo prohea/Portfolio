@@ -26,7 +26,11 @@ W3Schools
 
 # Technologies Used
 HTML, CSS
+
 # Deployed Project
+https://github.com/prohea/Portfolio
+
+https://prohea.github.io/Portfolio/
 
 # Screenshot
 ![Portfolio](./Assets/Images/portfolioscreenshoot.png)
